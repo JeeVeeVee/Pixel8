@@ -1,11 +1,15 @@
 package code_generator;
 
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 
 import java.util.ArrayList;
 
 public class CodeGeneratorControlla {
     public AnchorPane anchor;
+    public Button generateButton;
+    public Label generateCodeLabel;
 
     private CodeGeneratorModel model;
 
@@ -33,6 +37,7 @@ public class CodeGeneratorControlla {
         for (ClickablePane pane : newPanes){
             anchor.getChildren().add(pane);
         }
+        generateButton.setOnAction(e -> generateCodeLabel.setText(model.generateCode()));
     }
 
     public void click(int x, int y){
