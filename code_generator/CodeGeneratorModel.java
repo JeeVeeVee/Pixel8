@@ -1,6 +1,7 @@
 package code_generator;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class CodeGeneratorModel {
     private boolean[][] figureInSpe;
@@ -12,6 +13,35 @@ public class CodeGeneratorModel {
     }
     public void addListener(Listener l){
         listeners.add(l);
+    }
+
+    public void toggle(int x, int y){
+        figureInSpe[x][y] = ! figureInSpe[x][y];
+        for(int i = 0; i < 5; i++){
+            for (int j = 0; j < 5; j++){
+                /*if(figureInSpe[i][j])
+                    System.out.print("#");
+                else{
+                    System.out.print("*");
+                }*/
+            }
+            System.out.println("");
+        }
+        notifyListeners();
+    }
+
+    public String generateCode(){
+        String output = "";
+        for(int i = 0; i < 5; i++){
+            for (int j = 0; j < 5; j++){
+               if (figureInSpe[i][j]){
+                   output += "0";
+               } else {
+                   output += "1";
+               }
+            }
+        }
+        return output;
     }
 
     public void notifyListeners(){
