@@ -14,6 +14,21 @@ public class CodeGeneratorModel {
         listeners.add(l);
     }
 
+    public void toggle(int x, int y){
+        figureInSpe[x][y] = ! figureInSpe[x][y];
+        for(int i = 0; i < 5; i++){
+            for (int j = 0; j < 5; j++){
+                /*if(figureInSpe[i][j])
+                    System.out.print("#");
+                else{
+                    System.out.print("*");
+                }*/
+            }
+            System.out.println("");
+        }
+        notifyListeners();
+    }
+
     public void notifyListeners(){
         for (Listener listener : listeners) {
             listener.listen(this);

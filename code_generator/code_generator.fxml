@@ -3,38 +3,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.text.Font?>
-<AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code_generator.CodeGeneratorControlla">
+<AnchorPane fx:id="anchor" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code_generator.CodeGeneratorControlla">
     <children>
         <Label layoutX="177.0" layoutY="14.0" text="Generate code for your figure">
             <font>
                 <Font size="27.0" />
             </font>
         </Label>
-        <ClickablePane fx:id="pane_2_2" layoutX="329.0" layoutY="257.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_2_3" layoutX="429.0" layoutY="257.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_2_4" layoutX="525.0" layoutY="257.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_1_1" layoutX="229.0" layoutY="157.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_2_1" layoutX="229.0" layoutY="257.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_1_2" layoutX="329.0" layoutY="157.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_1_3" layoutX="429.0" layoutY="157.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_0_2" layoutX="329.0" layoutY="57.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_0_3" layoutX="429.0" layoutY="57.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_0_4" layoutX="525.0" layoutY="57.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_1_4" layoutX="525.0" layoutY="157.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_3_2" layoutX="329.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_4_2" layoutX="329.0" layoutY="457.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_3_3" layoutX="429.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_3_4" layoutX="525.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_4_3" layoutX="429.0" layoutY="457.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_4_4" layoutX="525.0" layoutY="457.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_0_0" layoutX="129.0" layoutY="57.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_0_1" layoutX="229.0" layoutY="57.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_1_0" layoutX="129.0" layoutY="157.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_2_0" layoutX="129.0" layoutY="257.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_3_0" layoutX="129.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_4_0" layoutX="129.0" layoutY="457.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_3_1" layoutX="229.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
-        <ClickablePane fx:id="pane_4_1" layoutX="229.0" layoutY="457.0" prefHeight="100.0" prefWidth="100.0" styleClass="button_like" stylesheets="@code_generator.css" />
         <Button layoutX="344.0" layoutY="589.0" mnemonicParsing="false" text="Generate" />
     </children>
 </AnchorPane>

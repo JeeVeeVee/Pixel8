@@ -4,7 +4,7 @@ import javafx.collections.ObservableList;
 import javafx.css.Style;
 import javafx.scene.layout.Pane;
 
-public class ClickablePane extends Pane implements Listener {
+public class ClickablePane extends Pane implements Listener{
 
     private int row;
     private int column;
@@ -25,9 +25,11 @@ public class ClickablePane extends Pane implements Listener {
 
     @Override
     public void listen(CodeGeneratorModel model) {
+        System.out.println();
         if(model.getValue(row, column)){
-            this.getStylesheets().add("code_generator.css");
-            this.getStyleClass().add("");
+            this.setStyle("-fx-background-color : black");
+        } else{
+            this.setStyle("-fx-background-color : white");
         }
     }
 
@@ -37,5 +39,13 @@ public class ClickablePane extends Pane implements Listener {
 
     public void setRow(int row) {
         this.row = row;
+    }
+
+    public int getColumn() {
+        return column;
+    }
+
+    public int getRow() {
+        return row;
     }
 }
